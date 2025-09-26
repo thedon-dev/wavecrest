@@ -1,4 +1,5 @@
 import React from "react";
+import WorldImage from "../assets/worldImage.jpeg";
 
 const Footer = () => {
   const offices = [
@@ -64,14 +65,14 @@ const Footer = () => {
     emails: ["info@dovewellgroup.com", "request@dovewellgroup.com"],
     website: "www.dovewellgroup.com",
     phoneLines: {
-      nigeria: [
+      NIGERIA: [
         "+234-(01)-631-1665",
         "+234-(0)81-1598-2622",
         "+234-(0)81-8472-4384",
         "+234-(0)81-1245-8119",
       ],
-      angola: ["+244-222-043-327"],
-      ghana: ["+233(0)596-921-068"],
+      ANGOLA: ["+244-222-043-327"],
+      GHANA: ["+233(0)596-921-068"],
     },
   };
 
@@ -81,7 +82,14 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white py-12 px-[5%] lg:px-[10%]">
-      <div className="flex flex-col lg:flex-row gap-10 w-full">
+      <div
+        className="flex flex-col lg:flex-row gap-10 w-full 2xl:container mx-auto"
+        style={{
+          // backgroundImage: `url(${WorldImage})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         {offices.map((off) => (
           <div
             className={`${
@@ -115,24 +123,39 @@ const Footer = () => {
 
                   <div className="text-xs mt-3 text-gray-400 leading-relaxed">
                     {office.address.map((line, index) => (
-                      <span key={index} className="block">
+                      <span key={index} className="block leading-6">
                         {line}
                       </span>
                     ))}
                   </div>
                   <div className="leading-1.5">
                     {contactInfo.emails.map((email) => (
-                      <p className="text-xs text-gray-400">
+                      <p className="text-xs text-gray-400 leading-6">
                         Email: <span className="text-white">{email}</span>
                       </p>
                     ))}{" "}
                   </div>
-                  <p className="text-xs text-gray-400">
+                  <p className="text-xs text-gray-400 leading-6">
                     Website:{" "}
                     <span className="text-white">{contactInfo.website}</span>
                   </p>
                 </div>
               ))}
+              <div>
+                <div>
+                  <div className="h-1 w-full bg-[linear-gradient(to_right,theme(colors.blue.500)_25%,theme(colors.gray.800)_25%)]" />
+                  <p className="mt-2 text-lg font-semibold uppercase">
+                    {off.country} call lines
+                  </p>
+                </div>
+                <div className="mt-3">
+                  {contactInfo.phoneLines[off.country].map((phone) => (
+                    <p className="text-xs text-gray-400 leading-6" key={phone}>
+                      Phone: <span className="text-white">{phone}</span>
+                    </p>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         ))}

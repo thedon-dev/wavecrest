@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Img1 from "../../assets/Home/People-Innovation.jpg";
+import Img2 from "../../assets/Home/EPCM.png";
+import Img3 from "../../assets/Home/Creating-value.jpg";
+import Img4 from "../../assets/Home/Ensuring-Excellence.jpg";
+import Img5 from "../../assets/Home/Hi-Tech.jpg";
+import Img6 from "../../assets/Home/Supply-Chain.jpg";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,30 +13,38 @@ const HeroSection = () => {
   const slides = [
     {
       id: 1,
-      title: "Advanced AI Systems",
-      image:
-        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      title: "People . Innovation . Customer Focus",
+      image: Img1,
       description: "Cutting-edge artificial intelligence solutions",
     },
     {
       id: 2,
-      title: "Cloud Infrastructure",
-      image:
-        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      title: "EPCM & EPCI - A Leading Engineering Service Provider",
+      image: Img2,
       description: "Scalable and secure cloud solutions",
     },
     {
       id: 3,
-      title: "Data Analytics",
-      image:
-        "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      title: "Creating values through technology...",
+      image: Img3,
       description: "Transform data into actionable insights",
     },
     {
       id: 4,
-      title: "Cybersecurity",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      title: "Ensuring excellence in service delivery...",
+      image: Img4,
+      description: "Protecting your digital assets",
+    },
+    {
+      id: 5,
+      title: "Hi-Tech products created around client's requirements...",
+      image: Img5,
+      description: "Protecting your digital assets",
+    },
+    {
+      id: 6,
+      title: "Demonstrating a world-class supply chain process...",
+      image: Img6,
       description: "Protecting your digital assets",
     },
   ];
@@ -57,7 +71,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="h-[500px] overflow-hidden relative shadow-2xl">
+      <section className="h-[600px] overflow-hidden relative shadow-2xl">
         <div
           className="absolute top-0 left-0 w-full h-full flex transition-transform duration-700 ease-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
