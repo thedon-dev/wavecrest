@@ -122,11 +122,11 @@ const Navbar = () => {
         },
         {
           name: "OCTG, Seamless Line Pipes & Drilling Equipment",
-          link: "/products/octg-pipes-drilling-equipment",
+          link: "/products/seamless-line-pipes-and-drilling-equipment",
         },
         {
           name: "Fittings & Flanges",
-          link: "/products/fittings-flanges",
+          link: "/products/fittings-and-flanges",
         },
         {
           name: "Instrumentation & Flow Control Products",

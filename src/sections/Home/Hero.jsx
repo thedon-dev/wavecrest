@@ -87,7 +87,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
         <div className="relative z-10 py-12 h-full flex flex-col justify-center ">
           <div className=" z-15 text-white opacity-80 transition-opacity duration-500">
-            <p className="bg-blue-500 font-semibold text-3xl px-6 py-4 w-fit">
+            <p className="bg-blue-500 font-semibold text-base lg:text-3xl px-6 py-4 w-fit">
               {slides[currentSlide].title}
             </p>
           </div>

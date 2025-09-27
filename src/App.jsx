@@ -6,6 +6,11 @@ import Layout from "./components/Layout";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
+import CorperateSocial from "./pages/CorperateSocial";
+import HseQuality from "./pages/HseQuality";
+import Valves from "./pages/Valves";
+import DrillingEquipment from "./pages/DrillingEquipment";
+import FittingsAndFlanges from "./pages/FittingsAndFlanges";
 
 function App() {
   return (
@@ -17,7 +22,25 @@ function App() {
           <Route path="/company" element={<Layout />}>
             <Route path="about-us" element={<AboutUs />} />
             <Route path="careers" element={<Careers />} />
+            <Route
+              path="corporate-social-responsibility"
+              element={<CorperateSocial />}
+            />
+            <Route path="hse-quality-management" element={<HseQuality />} />
           </Route>
+
+          <Route path="/products" element={<Layout />}>
+            <Route path="valves" element={<Valves />} />
+            <Route
+              path="seamless-line-pipes-and-drilling-equipment"
+              element={<DrillingEquipment />}
+            />
+            <Route
+              path="fittings-and-flanges"
+              element={<FittingsAndFlanges />}
+            />
+          </Route>
+
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
