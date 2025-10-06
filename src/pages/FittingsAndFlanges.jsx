@@ -9,7 +9,7 @@ const FittingsAndFlanges = () => {
       </div>
       <div>
         <p className="text-sm text-justify">
-          Dovewell Oilfield Services Limited provides different sizes of
+          Wavecrest Offshore Limited provides different sizes of
           flanges/fittings from 1/2″ to 60″, ANSI classes 150lbs to 2500lbs
           API6D & API6A and API 2000 to API 20000 in Carbon Steel, Stainless
           Steel, Duplex Steel, Super Duplex Steel, Alloy Steel, Incoloy-Monel,

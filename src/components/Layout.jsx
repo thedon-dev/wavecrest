@@ -17,25 +17,23 @@ export default function Layout({ title, description }) {
 
   // Sample news data - replace with your actual news
   const newsItems = [
-    "NUNG appoints Dovewell Oilfield Services Ltd as their Buying House for five (5) years Contract",
-    "Dovewell Group expands operations to Ghana with new regional office",
+    "NUNG appoints Wavecrest Services Ltd as their Buying House for five (5) years Contract",
+    "Wavecrest Group expands operations to Ghana with new regional office",
     "New partnership announced with major international energy company",
-    "Dovewell awarded ISO 9001:2015 certification for quality management",
+    "Wavecrest awarded ISO 9001:2015 certification for quality management",
     "Annual report shows 25% growth in offshore services division",
   ];
 
-  // Auto-advance news every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setIsTransitioning(true);
 
-      // Wait for slide-out animation to complete
       setTimeout(() => {
         setCurrentNewsIndex((prevIndex) =>
           prevIndex === newsItems.length - 1 ? 0 : prevIndex + 1
         );
         setIsTransitioning(false);
-      }, 500); // Match this with CSS transition duration
+      }, 500);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -44,11 +42,16 @@ export default function Layout({ title, description }) {
   return (
     <div className="flex flex-col">
       <Helmet>
-        <title>{title ? `${title} | Dovewell Group` : "Dovewell Group"}</title>
+        <title>
+          {title
+            ? `${title} | Wavecrest Offshore Limited`
+            : "Wavecrest Offshore Limited"}
+        </title>
         <meta
           name="description"
           content={
-            description || "Dovewell Group - Creating values through technology"
+            description ||
+            "Wavecrest Offshore Limited - Creating values through technology"
           }
         />
       </Helmet>
@@ -70,7 +73,7 @@ export default function Layout({ title, description }) {
             <div className="mb-8">
               <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-blue-500 to-gray-800 bg-[length:25%_100%] bg-no-repeat" />
               <h3 className="text-2xl font-semibold mt-3 text-gray-800">
-                Search Dovewell
+                Search Wavecrest
               </h3>
               <div className="flex items-center border border-gray-300 mt-3 px-3 py-2 rounded-md">
                 <div className="flex px-2 text-gray-500">
@@ -78,13 +81,14 @@ export default function Layout({ title, description }) {
                 </div>
                 <input
                   type="text"
+                  disabled
                   className="focus:outline-none py-1 w-full text-gray-700 placeholder-gray-400"
                   placeholder="to search type and hit enter..."
                 />
               </div>
             </div>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-blue-500 to-gray-800 bg-[length:25%_100%] bg-no-repeat" />
               <h3 className="text-2xl font-semibold mt-2 text-gray-800">
                 Latest News
@@ -139,7 +143,7 @@ export default function Layout({ title, description }) {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
           </aside>
         </div>
       </div>

@@ -52,7 +52,7 @@ const Navbar = () => {
         },
         {
           name: "Project References",
-          link: "/company/project-references",
+          link: "",
         },
         {
           name: "Corporate Awards",
@@ -64,7 +64,7 @@ const Navbar = () => {
         },
         {
           name: "Company Profile Download",
-          link: "/company/profile-download",
+          link: "",
         },
       ],
     },
@@ -81,7 +81,7 @@ const Navbar = () => {
         },
         {
           name: "Process Control & Instrumentation",
-          link: "/services/process-control-instrumentation",
+          link: "/services/process-control-and-instrumentation",
         },
         {
           name: "Surface Protection",
@@ -89,23 +89,23 @@ const Navbar = () => {
         },
         {
           name: "Onshore and Offshore Crane Maintenance",
-          link: "/services/crane-maintenance",
+          link: "/services/onshore-and-offshore-crane-maintenance",
         },
         {
           name: "Marine Support, Tank & Vessel Cleaning Services",
-          link: "/services/marine-support-cleaning",
+          link: "/services/marine-support-tank-and-vessel-cleaning-services",
         },
         {
           name: "Overhaul, Installation and Commissioning",
-          link: "/services/overhaul-installation-commissioning",
+          link: "/services/overhaul-installation-and-commissioning",
         },
         {
           name: "Procurement Services & Contractual Support",
-          link: "/services/procurement-contractual-support",
+          link: "/services/procurement-services-and-contractual-support",
         },
         {
           name: "EPCI and EPCM",
-          link: "/services/epci-epcm",
+          link: "/services/epci-and-epcm",
         },
         {
           name: "Intelligent Pigging and Pipeline Services",

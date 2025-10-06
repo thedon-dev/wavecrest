@@ -60,7 +60,7 @@ const Home = () => {
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/30 transition-all duration-500"></div>
               </div>
             ))}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            {/* <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-blue-500">
                 NEWS & UPDATE
               </h3>
@@ -77,7 +77,7 @@ const Home = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

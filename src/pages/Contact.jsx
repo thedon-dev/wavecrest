@@ -20,22 +20,22 @@ const Contact = () => {
       </div>
       <div className="2xl:container mx-auto">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.218489242427!2d3.391422!3d6.494906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5f3f3b4b3b%3A0x3b4b3b4b3b4b3b4b!2sWavecrest%20College%20of%20Hospitality!5e0!3m2!1sen!2sng!4v1623756789012!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31802.45961501044!2d6.997780251943108!3d4.888093305321588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d3240fe23665%3A0xedfd733355976e0d!2sWavecrest%20Resources%20and%20Data%20Management%20Limited!5e0!3m2!1sen!2sng!4v1759343671758!5m2!1sen!2sng"
           width="100%"
           height="450"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
-          title="Google Map"
-        ></iframe>
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
       <div className="px-[5%] lg:px-[10%] py-20">
         <div className="2xl:container mx-auto px-4">
           <div className="h-1 w-full bg-gradient-to-r from-blue-500 via-blue-500 to-gray-800 bg-[length:25%_100%] bg-no-repeat" />
           <h1 className="text-4xl font-semibold my-5">Contact Us</h1>
           <p className="text-left">
-            Dovewell Oilfield Services Limited is always open for communication
-            on whatever questions you may have. So in case you do have questions
+            Wavecrest Offshore Limited is always open for communication on
+            whatever questions you may have. So in case you do have questions
             (as we assume) just go ahead and complete the form below to let us
             know.
           </p>

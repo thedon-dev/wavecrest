@@ -162,7 +162,7 @@ const HeroSection = () => {
           </p> */}
         </div>
         <Link
-          to="/about-us"
+          to="/company/about-us"
           className="px-7 mt-5 lg:mt-0 py-2 bg-blue-400 text-white w-fit"
         >
           Read More

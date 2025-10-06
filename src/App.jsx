@@ -11,6 +11,17 @@ import HseQuality from "./pages/HseQuality";
 import Valves from "./pages/Valves";
 import DrillingEquipment from "./pages/DrillingEquipment";
 import FittingsAndFlanges from "./pages/FittingsAndFlanges";
+import InspectionServices from "./pages/InspectionServices";
+import ProcessControl from "./pages/ProcessControl";
+import SurfaceProtection from "./pages/SurfaceProtection";
+import OffshoreAndOnshore from "./pages/OffshoreAndOnshore";
+import MarineSupport from "./pages/MarineSupport";
+import OverhaulInstallation from "./pages/OverhaulInstallation";
+import ProcurementServices from "./pages/ProcurementServices";
+import EpciAndEpcm from "./pages/EpciAndEpcm";
+import RopeAccess from "./pages/RopeAccess";
+import Partners from "./pages/Partners";
+import Clients from "./pages/Clients";
 
 function App() {
   return (
@@ -21,7 +32,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/company" element={<Layout />}>
             <Route path="about-us" element={<AboutUs />} />
-            <Route path="careers" element={<Careers />} />
             <Route
               path="corporate-social-responsibility"
               element={<CorperateSocial />}
@@ -41,8 +51,48 @@ function App() {
             />
           </Route>
 
+          <Route path="/services" element={<Layout />}>
+            <Route
+              path="inspection-services"
+              element={<InspectionServices />}
+            />
+            <Route path="rope-access" element={<RopeAccess />} />
+            <Route
+              path="process-control-and-instrumentation"
+              element={<ProcessControl />}
+            />
+            <Route path="surface-protection" element={<SurfaceProtection />} />
+            <Route
+              path="Onshore-and-Offshore-Crane-Maintenance"
+              element={<OffshoreAndOnshore />}
+            />
+            <Route
+              path="marine-support-tank-and-vessel-cleaning-services"
+              element={<MarineSupport />}
+            />
+            <Route
+              path="overhaul-installation-and-commissioning"
+              element={<OverhaulInstallation />}
+            />
+            <Route
+              path="procurement-services-and-contractual-support"
+              element={<ProcurementServices />}
+            />
+            <Route path="epci-and-epcm" element={<EpciAndEpcm />} />
+            <Route
+              path="intelligent-pigging-and-pipeline"
+              element={<InspectionServices />}
+            />
+          </Route>
+          <Route path="/" element={<Layout />}>
+            <Route path="careers" element={<Careers />} />
+          </Route>
+
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </>

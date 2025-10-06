@@ -50,14 +50,13 @@ const AboutUs = () => {
           within the country.
         </p>
         <p>
-          Headquartered in Lagos and Port Harcourt, Nigeria,{" "}
-          <strong>WaveCrest Offshore Limited</strong>
-          has plans for further expansion with the establishment of branches in
-          other West African countries. Our Port Harcourt office serves as the
-          nerve center for logistical and supplier liaison activities, while
-          also providing convenient access to original equipment manufacturers
-          and technical partners, thus facilitating seamless operations across
-          our network.
+          Headquartered in Port Harcourt, Nigeria,{" "}
+          <strong>WaveCrest Offshore Limited</strong> has plans for further
+          expansion with the establishment of branches in other West African
+          countries. Our Port Harcourt office serves as the nerve center for
+          logistical and supplier liaison activities, while also providing
+          convenient access to original equipment manufacturers and technical
+          partners, thus facilitating seamless operations across our network.
         </p>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import React from "react";
-import WorldImage from "../assets/worldImage.jpeg";
 
 const Footer = () => {
   const offices = [
@@ -7,54 +6,12 @@ const Footer = () => {
       country: "NIGERIA",
       offices: [
         {
-          name: "Lagos Office",
+          name: "Head Office",
           address: [
-            "Plot 21B Akwuzu Street,",
-            "Lekki Phase I, Lagos,",
-            "Lagos State,",
-            "Nigeria.",
-          ],
-        },
-        {
-          name: "Port Harcourt Office",
-          address: [
-            "Plot 13 JC International Street,",
-            "New Trans-Amadi Industrial Layout,",
-            "Off Peter Odili Road,",
+            "12 TAM David West Airport Road,",
             "Port Harcourt,",
             "Rivers State,",
             "Nigeria.",
-          ],
-        },
-        {
-          name: "Yard Location",
-          address: [
-            "Plot 154 New Trans-Amadi Industrial Layout,",
-            "Off ACM/JOE Eboje Road,",
-            "Port Harcourt,",
-            "Rivers State,",
-            "Nigeria.",
-          ],
-        },
-      ],
-    },
-    {
-      country: "ANGOLA",
-      offices: [
-        {
-          name: "Angola Office",
-          address: ["Rua Cmdt N'zaji no. 90 – Alvalade Luanda,", "Angola."],
-        },
-      ],
-    },
-    {
-      country: "GHANA",
-      offices: [
-        {
-          name: "Ghana Office",
-          address: [
-            "6th and 7th Floor, Atlantic Tower,",
-            "Airport City, Accra, Ghana.",
           ],
         },
       ],
@@ -62,28 +19,17 @@ const Footer = () => {
   ];
 
   const contactInfo = {
-    emails: ["info@dovewellgroup.com", "request@dovewellgroup.com"],
-    website: "www.dovewellgroup.com",
+    emails: ["info@wavecrestoffshoresupply.com"],
+    website: "www.wavecrestoffshore.com",
     phoneLines: {
-      NIGERIA: [
-        "+234-(01)-631-1665",
-        "+234-(0)81-1598-2622",
-        "+234-(0)81-8472-4384",
-        "+234-(0)81-1245-8119",
-      ],
-      ANGOLA: ["+244-222-043-327"],
-      GHANA: ["+233(0)596-921-068"],
+      NIGERIA: ["+23408107674839"],
     },
   };
-
-  const Nigeria = offices[0];
-  const ANGOLA = offices[1];
-  const GHANA = offices[2];
 
   return (
     <footer className="bg-gray-900 text-white py-12 px-[5%] lg:px-[10%]">
       <div
-        className="flex flex-col lg:flex-row gap-10 w-full 2xl:container mx-auto"
+        className="flex flex-col lg:flex-row gap-10 w-full mx-auto justify-center"
         style={{
           // backgroundImage: `url(${WorldImage})`,
           backgroundPosition: "center",
@@ -130,7 +76,10 @@ const Footer = () => {
                   </div>
                   <div className="leading-1.5">
                     {contactInfo.emails.map((email) => (
-                      <p className="text-xs text-gray-400 leading-6">
+                      <p
+                        className="text-xs text-gray-400 leading-6"
+                        key={email}
+                      >
                         Email: <span className="text-white">{email}</span>
                       </p>
                     ))}{" "}
