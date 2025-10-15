@@ -37,6 +37,10 @@ function App() {
               element={<CorperateSocial />}
             />
             <Route path="hse-quality-management" element={<HseQuality />} />
+            <Route
+              path="Inspection-Services"
+              element={<InspectionServices />}
+            />
           </Route>
 
           <Route path="/products" element={<Layout />}>
