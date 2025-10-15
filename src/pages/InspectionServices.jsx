@@ -24,18 +24,188 @@ const InspectionServices = () => {
   //   "Casing Inspection (A.P.I.)",
   // ];
 
+  // Services data: each service has a title and an icon (JSX)
   const services = [
-    "Lifting Equipment Inspection and Certification",
-    "Drilling Equipment Inspection",
-    "Static Pressurised Equipment Inspection",
-    "Pressure Safety Valves Inspection",
-    "Hull and Structures Inspection",
-    "Jacking System Inspection and Maintenance",
-    "Dropped Object Management",
-    "Non-Destructive Testing (NDT)",
-    "Drone Inspection",
-    "Ex Inspection",
-    "Vendor Inspection",
+    {
+      title: "Lifting Equipment Inspection and Certification",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3 3h18M4 8h16M5 13h14M6 18h12"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Drilling Equipment Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 2v20m6-6H6"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Static Pressurised Equipment Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M9 12h6M12 9v6" />
+        </svg>
+      ),
+    },
+    {
+      title: "Pressure Safety Valves Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 18V6h12v12H6zm6 0v4M10 2h4"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Hull and Structures Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M3 12l9-9 9 9M4 10v10h16V10" />
+        </svg>
+      ),
+    },
+    {
+      title: "Jacking System Inspection and Maintenance",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M4 20h16M12 4v12M8 8h8M6 16h12" />
+        </svg>
+      ),
+    },
+    {
+      title: "Dropped Object Management",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M12 2v14m-6 6h12M8 14l4 4 4-4" />
+        </svg>
+      ),
+    },
+    {
+      title: "Non-Destructive Testing (NDT)",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M5 13l4 4L19 7" />
+        </svg>
+      ),
+    },
+    {
+      title: "Drone Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <circle cx="12" cy="12" r="3" />
+          <path d="M2 12h4m12 0h4M12 2v4m0 12v4" />
+        </svg>
+      ),
+    },
+    {
+      title: "Ex Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M12 2l9 9-9 9-9-9 9-9z" />
+          <path d="M9 9h6v6H9z" />
+        </svg>
+      ),
+    },
+    {
+      title: "Vendor Inspection",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M3 7h18M3 12h18M3 17h18" />
+        </svg>
+      ),
+    },
   ];
 
   return (
@@ -135,21 +305,25 @@ const InspectionServices = () => {
               services, including:
             </h2>
 
-            <div className="flex justify-center items-center flex-col">
-              {services.map((s, i) => (
+            <div className="flex flex-col items-center">
+              {services.map((service, i) => (
                 <div
                   key={i}
-                  className="flex justify-between items-center gap-8 bg-gray-50 mb-6 p-6 rounded-xl shadow-sm hover:shadow-md shadow-black/50 transition-shadow"
+                  className="flex items-center mt-2 gap-6 w-full sm:w-10/12 bg-gray-50 mb-6 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
-                  <a
-                    href="#"
-                    className="text-indigo-600 font-medium text-sm hover:text-indigo-700"
-                  >
-                    Read more →
-                  </a>
-                  <h3 className="font-semibold text-lg mb-2 text-gray-800">
-                    {s}
-                  </h3>
+                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 rounded-full">
+                    {service.icon}
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Short description for {service.title}. Replace this with
+                      actual details.
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
