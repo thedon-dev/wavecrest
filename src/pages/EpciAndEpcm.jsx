@@ -52,6 +52,51 @@ const EpciAndEpcm = () => {
     "Monitor the progress, expedite the delivery",
   ];
 
+  const list6 = [
+    "EM for all disciplines: process, mechanical, electrical, automation and civil design and all other parties involved (multiple companies, multiple languages and cultures)",
+    "Scope definitions, i.e. preparation of drawings and technical specifications for the basic and detailed engineering",
+    "Management of the quality, progress (timeline) and performance of engineering activities for all disciplines",
+    "Managing the cooperation/co-ordination between disciplines",
+    "Managing sub-suppliers",
+    "Management of the content of engineering documents, including the technical aspect and the project’s scope and budgets",
+    "Technical analysis of bids, recommendations, verification of supplier and contractor documents",
+    "Project control: Preparation of cost and progress reports, including updates to the budget, commitments and forecasts until the project’s final delivery, including the management of all changes and amendments",
+    "Quality assurance: Development and implementation of the project’s quality assurance plan and organisation, Perform audits according to quality system",
+    "As-built services",
+    "Manuals",
+    "Planning | Feasibility",
+    "Engineering",
+    "Environmental",
+    "Jurisdictional Permitting",
+    "Environmental Permitting",
+    "Vendor Contracts",
+  ];
+
+  const list7 = [
+    "Preparation of procurement plan",
+    "Preparation of purchase (RFP preparation)",
+    "Sending RFP´s",
+    "Technical analysis of bids, recommendations, verification of supplier and contractor documents",
+    "Advise in optimizing the procurement",
+    "Procurement scheduling and progress follow-up",
+    "Material tracking throughout the project",
+    "At-site inspection of project materials and equipment",
+    "Warranty issues",
+  ];
+
+  const list8 = [
+    "Safety",
+    "Inspections",
+    "Environmental Inspections",
+    "GIS",
+    "Project Controls",
+    "Commissioning",
+    "Document Controls",
+    "Procurement",
+  ];
+
+  const list9 = ["Asset Management", "Compliance", "Integrity"];
+
   return (
     <section className="">
       <div>
@@ -125,6 +170,60 @@ const EpciAndEpcm = () => {
             marginTop={true}
           />
         </div>
+      </div>
+
+      <div className="mt-10">
+        <h2 className="text-3xl font-semibold">
+          EPCM – Engineering, Procurement, Construction and Maintenance
+        </h2>
+        <p className="text-sm mt-5">
+          <strong>Wavecrest</strong> EPCM Program is successful in utilizing
+          both engineering and construction management expertise as we manage
+          the project as your main representative to produce an energy project
+          from feasibility through total project management to commissioning on
+          site and maintenance and beyond. The EPCM Program for natural gas and
+          midstream clients utilizes OUR national team of engineers, inspectors,
+          planning and construction management personnel to provide a turnkey
+          solution for our clients.
+        </p>
+      </div>
+
+      <div>
+        <ListComp
+          services={list6}
+          showHeading={true}
+          headingText="Engineering Management Services"
+          marginTop={true}
+          showDescription={true}
+          descriptionText="When it comes to Engineering management, we offer you clash-free engineering saving you time and money. Our core expertise includes"
+        />
+
+        <ListComp
+          services={list7}
+          showHeading={true}
+          headingText="Procurement Services"
+          marginTop={true}
+          showDescription={true}
+          descriptionText="In the Procurement phase, we act as Owners’ Agent preparing RFP´s, analysing and evaluating offers according to the agreed procurement strategy. Our procurement services include:"
+        />
+
+        <ListComp
+          services={list8}
+          showHeading={true}
+          headingText="Construction Management"
+          marginTop={true}
+          showDescription={true}
+          descriptionText="We manage all aspects of construction management in all phases of the project."
+        />
+
+        <ListComp
+          services={list9}
+          showHeading={true}
+          headingText="Maintenance"
+          marginTop={true}
+          showDescription={true}
+          descriptionText="All maintenance is properly coordinated by our technical team in the following areas."
+        />
       </div>
     </section>
   );

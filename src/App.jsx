@@ -22,6 +22,10 @@ import EpciAndEpcm from "./pages/EpciAndEpcm";
 import RopeAccess from "./pages/RopeAccess";
 import Partners from "./pages/Partners";
 import Clients from "./pages/Clients";
+import IntelligentPigging from "./pages/IntelligentPigging";
+import InstrumentationAndFlow from "./pages/InstrumentationAndFlow";
+import RotatingEquipments from "./pages/RotatingEquipments";
+import Wellheads from "./pages/Wellheads";
 
 function App() {
   return (
@@ -52,6 +56,16 @@ function App() {
             <Route
               path="fittings-and-flanges"
               element={<FittingsAndFlanges />}
+            />
+            <Route
+              path="instrumentation-and-flow-control-products"
+              element={<InstrumentationAndFlow />}
+            />
+            <Route path="rotating-equipment" element={<RotatingEquipments />} />
+
+            <Route
+              path="wellheads-christmas-trees-accessories"
+              element={<Wellheads />}
             />
           </Route>
 
@@ -84,8 +98,8 @@ function App() {
             />
             <Route path="epci-and-epcm" element={<EpciAndEpcm />} />
             <Route
-              path="intelligent-pigging-and-pipeline"
-              element={<InspectionServices />}
+              path="intelligent-pigging-and-pipeline-services"
+              element={<IntelligentPigging />}
             />
           </Route>
           <Route path="/" element={<Layout />}>

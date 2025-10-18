@@ -280,8 +280,8 @@ const InspectionServices = () => {
           <strong>Wavecrest Offshore Limited</strong> specializes in maintenance
           inspections performing non destructive testing (NDT) inspection on all
           down-hole drilling inventory ranging from OCTG & drill pipes, crown to
-          the drill bits. All of Dovewell’s inspectors are trained on the job
-          and certified.
+          the drill bits. All of <strong>Wavecrest Offshore</strong> inspectors
+          are trained on the job and certified.
         </p>
 
         <ListComp

@@ -109,7 +109,7 @@ const Navbar = () => {
         },
         {
           name: "Intelligent Pigging and Pipeline Services",
-          link: "/services/intelligent-pigging-pipeline",
+          link: "/services/intelligent-pigging-and-pipeline-services",
         },
       ],
     },
@@ -130,7 +130,7 @@ const Navbar = () => {
         },
         {
           name: "Instrumentation & Flow Control Products",
-          link: "/products/instrumentation-flow-control",
+          link: "/products/instrumentation-and-flow-control-products",
         },
         {
           name: "Rotating Equipment",
