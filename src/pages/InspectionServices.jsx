@@ -1,11 +1,13 @@
 import React from "react";
 import ListComp from "../components/ListComp";
 import headImg from "../assets/inspection-services.jpg";
+import { Link } from "react-router-dom";
 
 const InspectionServices = () => {
   const services = [
     {
       title: "Lifting Equipment Inspection and Certification",
+      route: "/inspection-services/lifting-equipment-inspection-certification",
       icon: (
         <svg
           width="40"
@@ -26,6 +28,7 @@ const InspectionServices = () => {
     },
     {
       title: "Drilling Equipment Inspection",
+      route: "/inspection-services/drilling-equipment-inspection/",
       icon: (
         <svg
           width="46"
@@ -45,6 +48,7 @@ const InspectionServices = () => {
     },
     {
       title: "Static Pressurised Equipment Inspection",
+      route: "/inspection-services/static-pressurised-equipment-inspection/",
       icon: (
         <svg
           width="48"
@@ -64,6 +68,7 @@ const InspectionServices = () => {
     },
     {
       title: "Pressure Safety Valves Inspection",
+      route: "/inspection-services/pressure-safety-valves-inspection/",
       icon: (
         <svg
           width="48"
@@ -249,8 +254,8 @@ const InspectionServices = () => {
 
   return (
     <section>
+      {" "}
       {/* new */}
-
       <main className="w-full">
         {/* Breadcrumb */}
         <section className="bg-white border-b">
@@ -320,24 +325,26 @@ const InspectionServices = () => {
 
             <div className="flex flex-col items-center">
               {services.map((service, i) => (
-                <div
-                  key={i}
-                  className="flex items-center mt-2 gap-6 w-full sm:w-10/12 bg-gray-50 mb-6 p-5 rounded-xl shadow-sm hover:shadow-md hover:shadow-black/50  transition-shadow duration-200"
-                >
-                  <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 rounded-full">
-                    {service.icon}
-                  </div>
+                <Link to={service.route}>
+                  <div
+                    key={i}
+                    className="flex items-center mt-2 gap-6 w-full sm:w-10/12 bg-gray-50 mb-6 p-5 rounded-xl shadow-sm hover:shadow-md hover:shadow-black/50  transition-shadow duration-200"
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 rounded-full">
+                      {service.icon}
+                    </div>
 
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-lg text-gray-800 mb-1">
-                      {service.title}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      Short description for {service.title}. Replace this with
-                      actual details.
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Short description for {service.title}. Replace this with
+                        actual details.
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

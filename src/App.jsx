@@ -22,6 +22,14 @@ import EpciAndEpcm from "./pages/EpciAndEpcm";
 import RopeAccess from "./pages/RopeAccess";
 import Partners from "./pages/Partners";
 import Clients from "./pages/Clients";
+import IntelligentPigging from "./pages/IntelligentPigging";
+import InstrumentationAndFlow from "./pages/InstrumentationAndFlow";
+import RotatingEquipments from "./pages/RotatingEquipments";
+import Wellheads from "./pages/Wellheads";
+import LiftingInspectionPage from "./pages/liftingEquipmentInspectioncertification";
+import DrillingEquipments from "./pages/DrillingEquipmentInspection";
+import StaticPressurisedEquipment from "./pages/StacticPressurisedEquipment";
+import PresureSafty from "./pages/PressureSafety";
 
 function App() {
   return (
@@ -52,6 +60,16 @@ function App() {
             <Route
               path="fittings-and-flanges"
               element={<FittingsAndFlanges />}
+            />
+            <Route
+              path="instrumentation-and-flow-control-products"
+              element={<InstrumentationAndFlow />}
+            />
+            <Route path="rotating-equipment" element={<RotatingEquipments />} />
+
+            <Route
+              path="wellheads-christmas-trees-accessories"
+              element={<Wellheads />}
             />
           </Route>
 
@@ -84,8 +102,8 @@ function App() {
             />
             <Route path="epci-and-epcm" element={<EpciAndEpcm />} />
             <Route
-              path="intelligent-pigging-and-pipeline"
-              element={<InspectionServices />}
+              path="intelligent-pigging-and-pipeline-services"
+              element={<IntelligentPigging />}
             />
           </Route>
           <Route path="/" element={<Layout />}>
@@ -95,6 +113,23 @@ function App() {
           <Route path="/partners" element={<Partners />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
+          {/* inspection routes */}
+          <Route
+            path="/inspection-services/lifting-equipment-inspection-certification"
+            element={<LiftingInspectionPage />}
+          />
+          <Route
+            path="/inspection-services/drilling-equipment-inspection/"
+            element={<DrillingEquipments />}
+          />
+          <Route
+            path="/inspection-services/static-pressurised-equipment-inspection/"
+            element={<StaticPressurisedEquipment />}
+          />
+          <Route
+            path="/inspection-services/pressure-safety-valves-inspection/"
+            element={<PresureSafty />}
+          />
         </Routes>
 
         <Footer />
