@@ -6,11 +6,7 @@ import { ArrowDown, ArrowUp } from "lucide-react";
 const PresureSafty = () => {
   return (
     <div className="bg-white">
-      <div className="text-sm pt-8 mb-20 pl-10">
-        Home // Inspection Services //
-        <strong> Pressure Safety Valves Inspection </strong>
-      </div>
-      <main className="flex justify-center items-center flex-col">
+      <main className="flex justify-center items-center flex-col mt-10">
         <div className="w-[50%]">
           {/* Hero Section */}
           <section className="">
@@ -86,13 +82,12 @@ const PresureSafty = () => {
                 </a>
               </section>
 
-              <img
+              {/* <img
                 src={liftingImg}
                 alt="Lifting equipment inspection"
                 className="w-full pt-6 mb-6"
               />
 
-              {/* learn more button */}
               <div className="flex justify-center items-center">
                 <a
                   href="/contact"
@@ -100,7 +95,7 @@ const PresureSafty = () => {
                 >
                   <button>Learn more about Bridge</button>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

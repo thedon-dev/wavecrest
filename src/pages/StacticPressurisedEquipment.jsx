@@ -41,11 +41,7 @@ const StaticPressurisedEquipment = () => {
 
   return (
     <div className="bg-white">
-      <div className="text-sm pt-8 mb-20 pl-10">
-        Home // Inspection Services //
-        <strong> Static Pressurised Equipment Inspection </strong>
-      </div>
-      <main className="flex justify-center items-center flex-col">
+      <main className="flex justify-center items-center flex-col mt-10">
         <div className="w-[50%]">
           {/* Hero Section */}
           <section className="">
@@ -58,7 +54,7 @@ const StaticPressurisedEquipment = () => {
               inspection strategies
             </p>
             <p className="text-2xl text-gray-600 pt-6 mb-2">
-              At Axess Group, we perform inspection of pressurised systems to
+              At Wavecrest, we perform inspection of pressurised systems to
               obtain valuable data for maintenance planning and to verify the
               safety of our clients’ static pressurised equipment and ensuring
               their lifespan.
@@ -206,21 +202,11 @@ const StaticPressurisedEquipment = () => {
                 performance, to meet their requirements.
               </p>
 
-              <img
+              {/* <img
                 src={liftingImg}
                 alt="Lifting equipment inspection"
                 className="w-full pt-6 mb-6"
-              />
-
-              {/* learn more button */}
-              <div className="flex justify-center items-center">
-                <a
-                  href="/contact"
-                  className="text-gray-300 border  bg-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
-                >
-                  <button>Learn more about NDT software</button>
-                </a>
-              </div>
+              /> */}
             </div>
           </div>
         </section>

@@ -304,7 +304,7 @@ const InspectionServices = () => {
               </p>
               <div className="sm:w-full sm:h-[60%] text-center lg:h-[50%] lg:w-[60%] xl:ml-[20%] mt-10 bg-indigo-400 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition-colors">
                 <p className="text-3xl mb-4">Have any questions?</p>
-                <button className="bg-indigo-600 text-xl p-2 rounded-full">
+                <button className="bg-indigo-600 text-xl py-2 px-4 rounded-full flex gap-3 items-center mx-auto">
                   Contact us{" "}
                   <span className="text-white font-bold text-2xl hover:text-indigo-700">
                     →
@@ -323,25 +323,21 @@ const InspectionServices = () => {
               services, including:
             </h2>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               {services.map((service, i) => (
                 <Link to={service.route}>
                   <div
                     key={i}
-                    className="flex items-center mt-2 gap-6 w-full sm:w-10/12 bg-gray-50 mb-6 p-5 rounded-xl shadow-sm hover:shadow-md hover:shadow-black/50  transition-shadow duration-200"
+                    className="flex items-center mt-2 gap-6 w-full bg-gray-50 mb-6 p-5 rounded-xl shadow-sm hover:shadow-md hover:shadow-black/50  transition-shadow duration-200"
                   >
                     <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-indigo-100 rounded-full">
                       {service.icon}
                     </div>
 
                     <div className="flex-1">
-                      <h3 className="font-semibold text-lg text-gray-800 mb-1">
+                      <h3 className="text-lg lg:text-xl text-gray-800 mb-1">
                         {service.title}
                       </h3>
-                      <p className="text-sm text-gray-600">
-                        Short description for {service.title}. Replace this with
-                        actual details.
-                      </p>
                     </div>
                   </div>
                 </Link>

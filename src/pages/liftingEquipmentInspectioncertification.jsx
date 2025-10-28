@@ -46,11 +46,7 @@ const LiftingInspectionPage = () => {
   ];
   return (
     <div className="bg-white">
-      <div className="text-sm pt-8 mb-20 pl-10">
-        Home // Inspection Services // Lifting Equipment Inspection and
-        Certification
-      </div>
-      <main className="flex justify-center items-center flex-col">
+      <main className="flex justify-center items-center flex-col mt-10">
         <div className="w-[50%]">
           {/* Hero Section */}
           <section className="">
@@ -158,7 +154,7 @@ const LiftingInspectionPage = () => {
             </ul>
 
             {/*  */}
-            <div>
+            {/* <div>
               <h1 className="text-2xl mt-6 md:text-4xl text-left">
                 Reporting software for lifting equipment inspections
               </h1>
@@ -211,8 +207,6 @@ const LiftingInspectionPage = () => {
                 alt="Lifting equipment inspection"
                 className="h-[600px] w-full pt-6 mb-6"
               />
-
-              {/* learn more button */}
               <section className="py-12 mb-4 border rounded-md border-blue-500 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Have any questions?
@@ -242,7 +236,7 @@ const LiftingInspectionPage = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
