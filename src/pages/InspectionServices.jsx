@@ -233,6 +233,7 @@ const InspectionServices = () => {
     },
     {
       title: "Vendor Inspection",
+      route: "/inspection-services/VendorInspection",
       icon: (
         <svg
           width="40"

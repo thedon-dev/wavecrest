@@ -30,6 +30,7 @@ import LiftingInspectionPage from "./pages/liftingEquipmentInspectioncertificati
 import DrillingEquipments from "./pages/DrillingEquipmentInspection";
 import StaticPressurisedEquipment from "./pages/StacticPressurisedEquipment";
 import PresureSafty from "./pages/PressureSafety";
+import VendorInspection from "./pages/VendorInspection";
 
 function App() {
   return (
@@ -129,6 +130,10 @@ function App() {
           <Route
             path="/inspection-services/pressure-safety-valves-inspection/"
             element={<PresureSafty />}
+          />
+          <Route
+            path="/inspection-services/VendorInspection"
+            element={<VendorInspection />}
           />
         </Routes>
 
