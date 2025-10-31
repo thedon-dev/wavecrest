@@ -31,6 +31,7 @@ import DrillingEquipments from "./pages/DrillingEquipmentInspection";
 import StaticPressurisedEquipment from "./pages/StacticPressurisedEquipment";
 import PresureSafty from "./pages/PressureSafety";
 import VendorInspection from "./pages/VendorInspection";
+import ExInspection from "./pages/ExInspection";
 
 function App() {
   return (
@@ -134,6 +135,10 @@ function App() {
           <Route
             path="/inspection-services/VendorInspection"
             element={<VendorInspection />}
+          />
+          <Route
+            path="/inspection-services/ex-inspection/"
+            element={<ExInspection />}
           />
         </Routes>
 

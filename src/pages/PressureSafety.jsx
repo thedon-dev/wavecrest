@@ -1,6 +1,6 @@
 import React from "react";
 import pic1 from "../assets/marine-support.jpg";
-import liftingImg from "../assets/computer_stat.jpg";
+// import liftingImg from "../assets/computer_stat.jpg";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
 const PresureSafty = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import pic1 from "../assets/marine-support.jpg";
-// import liftingImg from "../assets/computer_stat.jpg";
+// import vendorInspectionimg from "../assets/vendorInspection.jpg ";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
 const VendorInspection = () => {
@@ -34,16 +34,15 @@ const VendorInspection = () => {
             className="rounded-2xl w-full pt-8 mb-8 shadow-lg"
           />
 
-          {/*  */}
           <section className=" py-8 flex flex-col items-center justify-center">
-            <p className="text-2xl text-gray-600 pt-6 mb-2">
-              At Axess Group, we help clients focus on their businesses by
-              handling the inspection aspect of the procurement process. With
-              over two decades of experience in the oil and gas industry, we are
-              very familiar with the specifications and regulations related to
-              equipment.
-            </p>
             <div className="w-[52%]">
+              <p className="text-2xl text-gray-600 pt-6 mb-2">
+                At Axess Group, we help clients focus on their businesses by
+                handling the inspection aspect of the procurement process. With
+                over two decades of experience in the oil and gas industry, we
+                are very familiar with the specifications and regulations
+                related to equipment.
+              </p>
               <h1 className="text-2xl mt-6 md:text-4xl mb-6 font-semibold text-left">
                 Vendor inspection services
               </h1>
@@ -70,13 +69,16 @@ const VendorInspection = () => {
               </p>
 
               <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul className="list-disc list-inside text-2xl text-gray-600 pt-6 mb-2">
+                  <li>Pressure equipment</li>
+                  <li>Lifting equipment</li>
+                  <li>Electrical equipment</li>
                 </ul>
               </div>
               <div>
+                {/* <div>
+                  <img src={vendorInspectionimg} alt="vendor_inspection" />
+                </div> */}
                 {/* learn more button */}
                 <section className="py-12  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -90,21 +92,6 @@ const VendorInspection = () => {
                     Contact us
                   </a>
                 </section>
-
-                {/* <img
-                  src={liftingImg}
-                  alt="Lifting equipment inspection"
-                  className="w-full pt-6 mb-6"
-                />
-  
-                <div className="flex justify-center items-center">
-                  <a
-                    href="/contact"
-                    className="text-gray-300 border  bg-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
-                  >
-                    <button>Learn more about Bridge</button>
-                  </a>
-                </div> */}
               </div>
             </div>
           </section>
