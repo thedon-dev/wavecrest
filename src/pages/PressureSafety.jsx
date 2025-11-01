@@ -6,8 +6,8 @@ import { ArrowDown, ArrowUp } from "lucide-react";
 const PresureSafty = () => {
   return (
     <div className="bg-white">
-      <main className="flex justify-center items-center flex-col mt-10">
-        <div className="w-[50%]">
+      <main className="flex justify-center items-center p-6 flex-col mt-10">
+        <div className="">
           {/* Hero Section */}
           <section className="">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
@@ -35,8 +35,8 @@ const PresureSafty = () => {
 
         {/*  */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="w-[52%]">
-            <h1 className="text-2xl mt-6 md:text-4xl mb-6 font-semibold text-left">
+          <div className="">
+            <h1 className="text-2xl text-center mt-6 md:text-4xl mb-6 font-semibold text-left">
               PSV inspection services
             </h1>
             <p className="text-2xl text-gray-600 pt-6 mb-2">

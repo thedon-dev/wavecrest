@@ -7,8 +7,8 @@ const VendorInspection = () => {
   return (
     <div>
       <div className="bg-white">
-        <main className="flex justify-center items-center flex-col mt-10">
-          <div className="w-[50%]">
+        <main className="flex justify-center items-center p-6 flex-col mt-10">
+          <div className="">
             {/* Hero Section */}
             <section className="">
               <p className="text-sm text-blue-600 mb-6">QC SERVICES</p>
@@ -35,7 +35,7 @@ const VendorInspection = () => {
           />
 
           <section className=" py-8 flex flex-col items-center justify-center">
-            <div className="w-[52%]">
+            <div className="">
               <p className="text-2xl text-gray-600 pt-6 mb-2">
                 At Axess Group, we help clients focus on their businesses by
                 handling the inspection aspect of the procurement process. With

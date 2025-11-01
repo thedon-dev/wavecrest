@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   const contactInfo = {
-    emails: ["info@wavecrestoffshoresupply.com"],
+    emails: ["info@wavecrestofflimited.com"],
     website: "www.wavecrestoffshore.com",
     phoneLines: {
       NIGERIA: ["+23408107674839"],

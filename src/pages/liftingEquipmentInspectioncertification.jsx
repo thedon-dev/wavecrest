@@ -1,7 +1,7 @@
 import React from "react";
 import pic1 from "../assets/marine-support.jpg";
 import pic2 from "../assets/pic2.jpg";
-import liftingImg from "../assets/computer_stat.jpg";
+// import liftingImg from "../assets/computer_stat.jpg";
 
 const LiftingInspectionPage = () => {
   const inspection = [
@@ -46,8 +46,8 @@ const LiftingInspectionPage = () => {
   ];
   return (
     <div className="bg-white">
-      <main className="flex justify-center items-center flex-col mt-10">
-        <div className="w-[50%]">
+      <main className="flex justify-center items-center p-4 flex-col mt-10">
+        <div className="">
           {/* Hero Section */}
           <section className="">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
@@ -85,7 +85,7 @@ const LiftingInspectionPage = () => {
 
         {/* Certification Process */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="w-[52%]">
+          <div className="">
             <h1 className="text-2xl md:text-4xl text-left">
               Lifting equipment inspection and certification services
             </h1>
@@ -159,15 +159,15 @@ const LiftingInspectionPage = () => {
                 Reporting software for lifting equipment inspections
               </h1>
               <p className="text-lg mt-4 mb-6">
-                Reporting is done in Bridge, Axess Digital’s software. Lifting
+                Reporting is done in Bridge, Wavecreast Digital’s software. Lifting
                 equipment inspections will be reported in the Equip module, a
                 purpose-built software solution to handle compliance of all
                 lifting equipment for equipment owners, providing them with full
                 control of the status and history of equipment and their
-                documentation. Aside from Axess and our clients, third parties
+                documentation. Aside from Wavecreast and our clients, third parties
                 also utilise Equip to achieve streamlined and high-quality
                 inspections. In addition to periodic surveys and certifications,
-                Axess Group, as an Enterprise of Competence, has proven to be a
+                Wavecreast Group, as an Enterprise of Competence, has proven to be a
                 value-adding partner for our clients in the following areas:
               </p>
 

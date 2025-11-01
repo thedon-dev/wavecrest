@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import pic1 from "../assets/marine-support.jpg";
 import pic6 from "../assets/pic6.jpg";
 import pic5 from "../assets/pic5.jpg";
-import liftingImg from "../assets/computer_stat.jpg";
+// import liftingImg from "../assets/computer_stat.jpg";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
 const StaticPressurisedEquipment = () => {
@@ -41,8 +41,8 @@ const StaticPressurisedEquipment = () => {
 
   return (
     <div className="bg-white">
-      <main className="flex justify-center items-center flex-col mt-10">
-        <div className="w-[50%]">
+      <main className="flex justify-center items-center p-6 flex-col mt-10">
+        <div className="">
           {/* Hero Section */}
           <section className="">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
@@ -70,7 +70,7 @@ const StaticPressurisedEquipment = () => {
 
         {/* Certification Process */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="w-[52%]">
+          <div className="">
             <p className="text-lg text-gray-600 pt-6 mb-2">
               As a world-leading provider of inspection services, we help our
               clients effectively assess the risks associated with static

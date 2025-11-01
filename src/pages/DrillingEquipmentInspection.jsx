@@ -2,13 +2,13 @@ import React from "react";
 import pic1 from "../assets/marine-support.jpg";
 import pic4 from "../assets/pic4.jpg";
 import pic3 from "../assets/pic3.jpg";
-import liftingImg from "../assets/computer_stat.jpg";
+// import liftingImg from "../assets/computer_stat.jpg";
 
 const LiftingInspectionPage = () => {
   return (
     <div className="bg-white">
-      <main className="flex justify-center items-center flex-col mt-10">
-        <div className="w-[50%]">
+      <main className="flex justify-center items-center px-6 flex-col mt-10">
+        <div className="">
           {/* Hero Section */}
           <section className="">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
@@ -36,7 +36,7 @@ const LiftingInspectionPage = () => {
 
         {/* Certification Process */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="w-[52%]">
+          <div className="">
             <h1 className="text-2xl md:text-4xl mb-6 font-semibold text-left">
               Drilling equipment inspection services
             </h1>
