@@ -42,7 +42,7 @@ const StaticPressurisedEquipment = () => {
   return (
     <div className="bg-white">
       <main className="flex justify-center items-center p-6 flex-col mt-10">
-        <div className="">
+        <div className="md:px-16">
           {/* Hero Section */}
           <section className="">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
@@ -65,12 +65,12 @@ const StaticPressurisedEquipment = () => {
         <img
           src={pic1}
           alt="Lifting equipment inspection"
-          className="rounded-2xl w-full pt-8 mb-8 shadow-lg"
+          className="rounded-md px-4 w-full pt-8 mb-8 shadow-lg"
         />
 
         {/* Certification Process */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="">
+          <div className="sm:w-full w-[70%]">
             <p className="text-lg text-gray-600 pt-6 mb-2">
               As a world-leading provider of inspection services, we help our
               clients effectively assess the risks associated with static
@@ -105,11 +105,13 @@ const StaticPressurisedEquipment = () => {
               </li>
             </ul>
 
-            <img
-              src={pic5}
-              alt="Lifting equipment inspection"
-              className=" w-full pt-6 mb-6 shadow-lg"
-            />
+            <div className="flex items-center justify-center">
+              <img
+                src={pic5}
+                alt="Lifting equipment inspection"
+                className=" w-[60%] pt-6 mb-4 shadow-lg"
+              />
+            </div>
 
             {/*  */}
             <div>
@@ -137,24 +139,28 @@ const StaticPressurisedEquipment = () => {
                 </li>
               </ul>
 
-              <img
-                src={pic6}
-                alt="Lifting equipment inspection"
-                className="h-[600px] w-full pt-6 mb-6"
-              />
+              <div className="flex items-center justify-center">
+                <img
+                  src={pic6}
+                  alt="Lifting equipment inspection"
+                  className="h-[500px] w-[60%] pt-6 mb-6"
+                />
+              </div>
 
               {/* learn more button */}
-              <section className="py-12  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  Have any questions?
-                </h2>
+              <section className="flex justify-center items-center">
+                <div className="py-8 px-6  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
+                  <h2 className="text-lg md:text-2xl font-bold mb-4">
+                    Have any questions?
+                  </h2>
 
-                <a
-                  href="/contact"
-                  className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
-                >
-                  Contact us
-                </a>
+                  <a
+                    href="/contact"
+                    className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
+                  >
+                    Contact us
+                  </a>
+                </div>
               </section>
 
               {/*  */}

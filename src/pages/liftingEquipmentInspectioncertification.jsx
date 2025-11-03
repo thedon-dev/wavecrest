@@ -47,11 +47,11 @@ const LiftingInspectionPage = () => {
   return (
     <div className="bg-white">
       <main className="flex justify-center items-center p-4 flex-col mt-10">
-        <div className="">
+        <div className="sm:w-full w-[70%] md:px-10">
           {/* Hero Section */}
-          <section className="">
+          <section className=" text-center">
             <p className="text-sm text-blue-600 mb-6">Inspection SERVICES</p>
-            <h1 className="text-3xl md:text-5xl font-bold text-left">
+            <h1 className="text-3xl md:text-5xl sm:w-full w-[70%] font-bold">
               Lifting Equipment Inspection & Certification
             </h1>
             <p className="text-2xl text-blue-600 pt-6 mb-2">
@@ -85,7 +85,7 @@ const LiftingInspectionPage = () => {
 
         {/* Certification Process */}
         <section className=" py-8 flex flex-col items-center justify-center">
-          <div className="">
+          <div className="md:px-10">
             <h1 className="text-2xl md:text-4xl text-left">
               Lifting equipment inspection and certification services
             </h1>
@@ -119,13 +119,15 @@ const LiftingInspectionPage = () => {
               Lloyds).
             </p>
 
-            <img
-              src={pic2}
-              alt="Lifting equipment inspection"
-              className="h-[600px] w-full pt-6 mb-6 shadow-lg"
-            />
+            <div className="flex justify-center items-center">
+              <img
+                src={pic2}
+                alt="Lifting equipment inspection"
+                className="h-[500px] w-[60%] pt-6 mb-6 shadow-lg"
+              />
+            </div>
 
-            <h1 className="text-2xl md:text-4xl mb-6 font-semibold text-left">
+            <h1 className="text-2xl  md:text-4xl mb-6 font-semibold text-center">
               Our certifications, accreditations and memberships:
             </h1>
             <ul className="list-disc ml-6 text-lg">

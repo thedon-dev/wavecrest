@@ -165,17 +165,20 @@ const ExInspection = () => {
             our clients can easily access and review.
           </p>
 
-          {/* Contact Section */}
-          <section className="py-12 bg-blue-200 mt-8 rounded-md text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Have any questions?
-            </h2>
-            <a
-              href="/contact"
-              className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
-            >
-              Contact us
-            </a>
+          {/* learn more button */}
+          <section className="flex justify-center items-center">
+            <div className="py-8 px-6  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
+              <h2 className="text-lg md:text-2xl font-bold mb-4">
+                Have any questions?
+              </h2>
+
+              <a
+                href="/contact"
+                className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
+              >
+                Contact us
+              </a>
+            </div>
           </section>
         </section>
       </main>

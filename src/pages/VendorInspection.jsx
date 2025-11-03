@@ -10,9 +10,9 @@ const VendorInspection = () => {
         <main className="flex justify-center items-center p-6 flex-col mt-10">
           <div className="">
             {/* Hero Section */}
-            <section className="">
+            <section className="text-center">
               <p className="text-sm text-blue-600 mb-6">QC SERVICES</p>
-              <h1 className="text-3xl md:text-5xl font-bold text-left">
+              <h1 className="text-3xl md:text-5xl font-bold ">
                 Vendor Inspection
               </h1>
               <p className="text-2xl text-blue-600 pt-6 mb-2">
@@ -43,7 +43,7 @@ const VendorInspection = () => {
                 are very familiar with the specifications and regulations
                 related to equipment.
               </p>
-              <h1 className="text-2xl mt-6 md:text-4xl mb-6 font-semibold text-left">
+              <h1 className="text-2xl mt-6 md:text-4xl mb-6 font-semibold text-center">
                 Vendor inspection services
               </h1>
               <p className="text-2xl text-gray-600 pt-6 mb-2">
@@ -69,7 +69,7 @@ const VendorInspection = () => {
               </p>
 
               <div>
-                <ul className="list-disc list-inside text-2xl text-gray-600 pt-6 mb-2">
+                <ul className="list-disc list-inside text-2xl text-center text-gray-600 p-6 mb-6">
                   <li>Pressure equipment</li>
                   <li>Lifting equipment</li>
                   <li>Electrical equipment</li>
@@ -80,17 +80,19 @@ const VendorInspection = () => {
                   <img src={vendorInspectionimg} alt="vendor_inspection" />
                 </div> */}
                 {/* learn more button */}
-                <section className="py-12  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                    Have any questions?
-                  </h2>
+                <section className="flex justify-center items-center">
+                  <div className="py-8 px-6  bg-blue-200 mb-4 border rounded-md border-blue-500 text-center">
+                    <h2 className="text-lg md:text-2xl font-bold mb-4">
+                      Have any questions?
+                    </h2>
 
-                  <a
-                    href="/contact"
-                    className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
-                  >
-                    Contact us
-                  </a>
+                    <a
+                      href="/contact"
+                      className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-50 transition"
+                    >
+                      Contact us
+                    </a>
+                  </div>
                 </section>
               </div>
             </div>
