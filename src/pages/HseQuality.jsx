@@ -11,10 +11,10 @@ const HseQuality = () => {
 
       <div className="flex flex-col gap-8 text-sm mt-10">
         <p className="font-semibold">
-          Dovewell Oilfield Services Limited, our foremost commitment is to
-          conduct all operations with utmost consideration for health and
-          safety, prioritizing the well-being of individuals and assets affected
-          by our activities. We understand that health, safety, and operational
+          Wavecrest offshore Ltd, our foremost commitment is to conduct all
+          operations with utmost consideration for health and safety,
+          prioritizing the well-being of individuals and assets affected by our
+          activities. We understand that health, safety, and operational
           efficiency are interconnected, forming an integral part of our daily
           endeavors.
         </p>

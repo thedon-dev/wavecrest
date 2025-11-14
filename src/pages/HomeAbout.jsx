@@ -12,7 +12,7 @@ const HomeAbout = () => {
     {
       title: "HSSE Policy",
       paragraph:
-        "Integrated Energy Company (INTENCO) consistently conducts its businesses in a manner to ensure that there are no injuries to people or harm to our environment.",
+        "Wavecrest offshore Ltd, consistently conducts its businesses in a manner to ensure that there are no injuries to people or harm to our environment.",
       bg: "bg-green-100",
     },
     {
@@ -38,12 +38,12 @@ const HomeAbout = () => {
             About Us
           </h1>
           <p className="text-base md:text-lg text-gray-800 leading-relaxed">
-            WaveCrest Limited is a Nigerian indigenous oil and gas engineering
-            and construction service company. We pool the expertise of
-            experienced engineers and technicians to provide efficient services
-            within the Oil, Gas, and Engineering industry. WaveCrest Limited
-            offers services in Nigeria and aims to expand to the West African
-            sub-region.
+            Wavecrest offshore Ltd is a Nigerian indigenous oil and gas
+            engineering and construction service company. We pool the expertise
+            of experienced engineers and technicians to provide efficient
+            services within the Oil, Gas, and Engineering industry. WaveCrest
+            Limited offers services in Nigeria and aims to expand to the West
+            African sub-region.
           </p>
           <button className="bg-blue-600 text-white px-5 py-3 rounded-lg mt-6 text-base md:text-lg font-medium hover:bg-blue-800 transition duration-300">
             Read more about us

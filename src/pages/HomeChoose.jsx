@@ -7,7 +7,7 @@ const HomeChoose = () => {
     {
       title: "Expertise",
       description:
-        "WaveCrest limited specifically handles Pipeline Construction (Land & Swamp, Offshore, Horizontal Directional Drilling-HDD, Thrust Boring), Steel and Metal Fabrication (Storage Tanks, Process Works), Dredging Works, Civil Construction (Piling, Jetty, Bridges), and project financing of Turnkey Projects.",
+        "Wavecrest offshore Ltd, specifically handles Pipeline Construction (Land & Swamp, Offshore, Horizontal Directional Drilling-HDD, Thrust Boring), Steel and Metal Fabrication (Storage Tanks, Process Works), Dredging Works, Civil Construction (Piling, Jetty, Bridges), and project financing of Turnkey Projects.",
     },
     {
       title: "Safety",

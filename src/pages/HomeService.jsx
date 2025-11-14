@@ -56,8 +56,8 @@ const CardsSection = () => {
             Our Core Services
           </h2>
           <p className="text-gray-600 text-xl max-w-2xl mb-2 mx-auto">
-            Intenco provides the following services in the oil and gas industry;
-            project management, engineering, procurement,
+            Wavecrest offshore Ltd offers the following services in the oil and
+            gas industry; project management, engineering, procurement,
             construction/fabrication, installation, commissioning, maintenance
             and consultancy services.
           </p>
